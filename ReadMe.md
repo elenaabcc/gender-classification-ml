@@ -24,7 +24,7 @@ The goal of this project is to predict the gender (male/female) of a device_id b
 - **content:** The name of a single web content.
 - **gender:** Ground truth gender of the device_id (male 'm' or female 'f').
 
-### MODELS PROPOSED
+### MODELS PROPOSED (and WHY)
 1. **Logistic Regression:**
    - Simple and interpretable model.
    - Moderate performance but good as a baseline.
@@ -44,15 +44,11 @@ To address this, we chose to use undersampling of the female class instead of ov
 Logistic Regression and XGBoost offer balanced performance, while the Neural Network excels in recall, identifying more actual females at the cost of precision.
 
 
---> HOW TO READ THE RESULTS documentation -->  https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9
+[HOW TO READ THE RESULTS documentation](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
 
-Accuracy: Measures the overall correctness of the model. For example, Logistic Regression has an accuracy of 59.73%, meaning it correctly predicts the gender 59.73% of the time.
 
-Precision: Indicates the proportion of positive predictions (females) that are actually correct. For instance, XGBoost's precision of 0.5939 means that when it predicts a device ID as female, it is correct 59.39% of the time.
+![Models Table Result](Img/models_table_result.png)
 
-Recall: Measures the model's ability to identify all actual positive cases. The Neural Network's recall of 0.8078 shows it successfully identifies 80.78% of all actual females.
-
-F1 Score: The harmonic mean of precision and recall. It provides a balance between precision and recall. For example, Logistic Regression's F1 score of 0.6459 indicates a balanced performance between identifying actual positives and minimizing false positives.
 
 
 ### WHAT WE CAN DO BETTER WITH MORE TIME AND RESOURCES
